@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Day04Scanner02 {
     /*
         Ask user to enter the width and the length of a rectangle
-        and the area and the perimeter on the console
+        and the area and the perimeter on the console.
     */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);

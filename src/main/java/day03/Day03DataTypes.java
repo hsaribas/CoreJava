@@ -49,7 +49,7 @@ public class Day03DataTypes {
         Boolean isOld = true;
 
         //If a method is static, you can access to the method by using class name.
-        System.out.println(Byte.MIN_VALUE);
+        System.out.println(Byte.MIN_VALUE);//-128
         System.out.println(Integer.MIN_VALUE);//-2147483648
         System.out.println(Float.MIN_VALUE);//1.4E-45
         System.out.println(Long.MAX_VALUE);//9223372036854775807

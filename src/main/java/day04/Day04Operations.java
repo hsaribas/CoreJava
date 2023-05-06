@@ -91,6 +91,6 @@ public class Day04Operations {
         //Pre-increment
         int m = 12;
         int n = ++m;
-        System.out.println(m);
+        System.out.println(n);
     }
 }

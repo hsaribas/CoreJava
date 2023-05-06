@@ -15,7 +15,7 @@ public class Day04Scanner {
         Scanner input = new Scanner(System.in);
 
         //2)Give a message to the user
-        System.out.println("Enter your age");
+        System.out.println("Enter your age: ");
 
         //3)Put the data coming from user into memory
         int age = input.nextInt();

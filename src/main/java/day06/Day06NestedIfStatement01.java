@@ -2,7 +2,7 @@ package day06;
 
 import java.util.Scanner;
 
-public class Day06NestedIfStatement {
+public class Day06NestedIfStatement01 {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);

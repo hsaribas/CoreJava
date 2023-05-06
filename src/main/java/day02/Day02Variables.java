@@ -32,13 +32,13 @@ public class Day02Variables {
 
     //How to create a variable
     //     Data Type - Variable Name - Equal Sign - Value - Semi Colon
-    static    int           age            =         12         ;
+    static int age = 12;
     static int height = 183;
 
     //Create a double variable
     public static double weight = 77.7;
 
-    //Note: If you don't type any access modifier, it means the access modifier is "default
+    //Note: If you don't type any access modifier, it means the access modifier is "default".
 
         /*
             Data Types In Java

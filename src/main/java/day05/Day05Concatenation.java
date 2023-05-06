@@ -1,7 +1,5 @@
 package day05;
 
-import java.sql.SQLOutput;
-
 public class Day05Concatenation {
     /*
         Concatenation: Joining String with each other or with other data types.
