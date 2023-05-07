@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class Day07Switch03 {
     //Ask user to enter a character, if it is vowel letter print "Vowel" on console,
-    // if it is not vowel print "NOT Vowel", if it is not letter print "Enter a letter"
+    // if it is not vowel print "NOT Vowel", if it is not letter print "Enter a letter".
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter a letter to check if it is vowel or not");
+        System.out.println("Enter a letter to check if it is vowel or not: ");
         char c = input.next().toLowerCase().charAt(0);
 
         switch (c) {
@@ -39,7 +39,7 @@ public class Day07Switch03 {
             case 'x':
             case 'y':
             case 'z':
-                System.out.println("NOT Vowel");
+                System.out.println("Not Vowel");
                 break;
             default:
                 System.out.println("Enter a letter");

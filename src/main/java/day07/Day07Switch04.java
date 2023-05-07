@@ -7,11 +7,11 @@ public class Day07Switch04 {
     //Ask user to enter two values then return the result of the operation.
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter 1st number");
+        System.out.println("Enter 1st number: ");
         double num1 = input.nextDouble();
-        System.out.println("Enter 2nd number");
+        System.out.println("Enter 2nd number: ");
         double num2 = input.nextDouble();
-        System.out.println("Enter one of the operation signs: +, -, *, /, %");
+        System.out.println("Enter one of the operation signs -> +, -, *, /, %: ");
         char opr = input.next().charAt(0);
 
         switch (opr) {

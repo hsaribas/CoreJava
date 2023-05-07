@@ -11,7 +11,7 @@ public class Day06NestedIfStatement02 {
     */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter a year to check if it is leap or not");
+        System.out.println("Enter a year to check if it is leap or not: ");
         int year = input.nextInt();
 
         if (year % 100 == 0) {

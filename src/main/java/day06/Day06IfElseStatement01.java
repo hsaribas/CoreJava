@@ -10,7 +10,7 @@ public class Day06IfElseStatement01 {
     */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter your score");
+        System.out.println("Enter your score: ");
         int score = input.nextInt();
 
         //Ask user to enter the score if the score is less than 50 print "Fail" otherwise print "Pass" on the console.
@@ -31,7 +31,7 @@ public class Day06IfElseStatement01 {
 
         //Ask user to enter the number of day, then print the name of the day whose number was given.
         //Example: 2 ==> Monday, 5 ==> Thursday
-        System.out.println("Enter day number");
+        System.out.println("Enter day number: ");
         int dayNum = input.nextInt();
 
         if (dayNum == 1) {

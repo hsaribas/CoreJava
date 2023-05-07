@@ -6,7 +6,7 @@ public class Day06IfElseStatement02 {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter your password");
+        System.out.println("Enter your password: ");
         String pwd = input.next();
 
         //Ask user to enter the password then check if the password is valid or not according to the given rules.

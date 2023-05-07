@@ -16,7 +16,7 @@ public class Day06NestedTernary {
         String s = "Tom Hanks";
 
         //If you have different data types in ternary, to see output on the console you can put the ternary
-        // directly inside the System.out.println
+        // directly inside the System.out.println()
         System.out.println(s.startsWith("T") ? s.length() : String.valueOf(s.charAt(0)));
 
         //If it is mandatory to create a container for the result of the ternary, convert data types to the

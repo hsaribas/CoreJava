@@ -8,7 +8,7 @@ public class Day07Switch02 {
     //User ==> 3    Output ==> Tuesday - Wednesday - Thursday - Friday - Saturday
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter day number");
+        System.out.println("Enter day number: ");
         int dayNumber = input.nextInt();
 
         switch (dayNumber) {

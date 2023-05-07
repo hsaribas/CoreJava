@@ -6,7 +6,7 @@ public class Day07Switch01 {
     //Ask user to enter the month name then print the month number.
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter month name");
+        System.out.println("Enter month name: ");
         String month = input.next();
 
         if (month.equalsIgnoreCase("January")) {

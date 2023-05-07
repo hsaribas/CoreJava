@@ -5,6 +5,7 @@ public class Day06Ternary {
     public static void main(String[] args) {
         //Type code to check if a number is positive or not
         int x = 12;
+
         //1.Way: By using if-else
         if (x > 0) {
             System.out.println("Positive");

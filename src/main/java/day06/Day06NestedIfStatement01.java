@@ -6,9 +6,9 @@ public class Day06NestedIfStatement01 {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter your gender...");
+        System.out.println("Enter your gender: ");
         String gender = input.next().toLowerCase();
-        System.out.println("Enter your age...");
+        System.out.println("Enter your age: ");
         int age = input.nextInt();
 
         /*
