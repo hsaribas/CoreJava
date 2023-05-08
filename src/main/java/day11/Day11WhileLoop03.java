@@ -3,7 +3,7 @@ package day11;
 public class Day11WhileLoop03 {
 
     public static void main(String[] args) {
-        //Type code to print the sum of the digits of an integer
+        //Type code to print the sum of the digits of an integer.
         int i = 237;
         int sum = 0;
         while (i > 0) {

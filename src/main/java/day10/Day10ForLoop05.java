@@ -6,11 +6,11 @@ public class Day10ForLoop05 {
     /*
         Ask the user how many fibonacci numbers he wants to see.
         Then write the code that prints these fibonacci numbers.
-        Example: if user enters 6 output will be 1 1 2 3 5 8
+        Example: If user enters 6 output it will be 1 1 2 3 5 8
     */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter the number of fibonacci number to see");
+        System.out.println("Enter the number of fibonacci number to see: ");
         int n = input.nextInt();
 
         int fibo1 = 1;

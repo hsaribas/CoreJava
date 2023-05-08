@@ -8,7 +8,7 @@ public class Day11DoWhileLoop01 {
             System.out.println("While Loop");
             i++;
         }
-        //This code block will not be executed, because "i" is not less than 1
+        //This code block will not be executed, because "i" is not less than 1.
 
         int k = 1;
         do {

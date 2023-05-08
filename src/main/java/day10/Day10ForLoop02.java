@@ -18,7 +18,7 @@ public class Day10ForLoop02 {
         //Type code to find the sum of the digits of an integer
         //2543 ==> 14
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter an integer to find the sum of the digits");
+        System.out.println("Enter an integer to find the sum of the digits: ");
         int num = input.nextInt();
         int absNum = Math.abs(num);
         int sumOfDigits = 0;

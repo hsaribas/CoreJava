@@ -26,7 +26,7 @@ public class Day10ForLoop01 {
             System.out.print(i + " ");
         }
 
-        //Example 2: Type even integers from 4 to 15 on the console by using for-loop
+        //Example 2: Type even integers from 4 to 15 on the console by using for-loop.
         //1.Way: Recommended
         for (int i = 4; i < 16; i++) {
             if (i % 2 == 0) {
@@ -38,14 +38,14 @@ public class Day10ForLoop01 {
             System.out.print(i + " ");
         }
 
-        //Example 3 : Type odd integers from 4 to 15 by using for-loop
+        //Example 3 : Type odd integers from 4 to 15 by using for-loop.
         for (int i = 4; i < 16; i++) {
             if (i % 2 != 0) {
                 System.out.print(i + " ");
             }
         }
 
-        //Example 4: Print all integers from 10 to 32 except 17 on the console
+        //Example 4: Print all integers from 10 to 32 except 17 on the console.
         //1.Way:
         for (int i = 10; i < 33; i++) {
             if (i != 17) {
@@ -60,7 +60,7 @@ public class Day10ForLoop01 {
             System.out.print(i + " ");
         }
 
-        //Example 4: Print all the integers from 10 to 32 except if the integer is less than 21 greater than 18
+        //Example 5: Print all the integers from 10 to 32 except if the integer is less than 21 greater than 18.
         for (int i = 10; i < 33; i++) {
             if (i > 18 && i < 21) {
                 continue;
@@ -68,7 +68,7 @@ public class Day10ForLoop01 {
             System.out.println(i + " ");
         }
 
-        //Example 5: Print String characters one by one on the console. If you see "x" stop printing
+        //Example 6: Print String characters one by one on the console. If you see "x" stop printing.
         //Example: Publix is the best ==> Publi     Tom Hanks ==> Tom Hanks
         String str = "Publix is the best";
         for (int i = 0; i <= str.length() - 1; i++) {

@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Day09StringManipulations02 {
     /*
-        Check if a password has the following conditions
+        Check if a password has the following conditions;
             i) It should not be empty
             ii) It should not be just a single space
             iii) It should not have spaces at the beginning and at the end
@@ -13,7 +13,7 @@ public class Day09StringManipulations02 {
     */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter your password");
+        System.out.println("Enter your password: ");
         String pwd = input.nextLine();
 
         if (pwd.isEmpty()) {

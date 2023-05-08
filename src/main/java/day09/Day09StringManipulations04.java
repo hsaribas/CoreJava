@@ -11,11 +11,11 @@ public class Day09StringManipulations04 {
         System.out.println(totalNumOfChars - strWithoutPunct.length());
         System.out.println(str.replaceAll("\\P{Punct}", "").length());
 
-        //Create a method prints greeting by using the given name
+        //Create a method prints greeting by using the given name.
         // Ali => Hi Ali       Tom => Hi Tom
         System.out.println(greetingUser("Ali"));
 
-        //Create a method makes the decimal part has 5 digits
+        //Create a method makes the decimal part has 5 digits.
         System.out.println(limitDecimalPart(10.5f));
     }
 

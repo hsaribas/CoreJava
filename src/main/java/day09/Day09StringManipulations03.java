@@ -13,9 +13,9 @@ public class Day09StringManipulations03 {
         String s = shirtPrice.replace("$", "");
         String b = bookPrice.replace("$", "");
 
-        double shirtD = Double.valueOf(s);
-        double bookD = Double.valueOf(b);
+        double shirt = Double.parseDouble(s);
+        double book = Double.parseDouble(b);
 
-        System.out.println(shirtD + bookD);
+        System.out.println(shirt + book);
     }
 }
