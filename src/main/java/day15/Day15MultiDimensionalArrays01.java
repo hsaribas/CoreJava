@@ -16,7 +16,7 @@ public class Day15MultiDimensionalArrays01 {
         mda[1][0] = 5;
         System.out.println(Arrays.deepToString(mda));//[[12, -3], [5, 11], [-7, 16]]
 
-        //Example 1: Find the sum of the first and the last inner array elements
+        //Example 1: Find the sum of the first and the last inner array elements.
         int sum = 0;
         for (int i = 0; i < mda.length; i++) {
             if (i == 0 || i == mda.length - 1) {
@@ -27,7 +27,7 @@ public class Day15MultiDimensionalArrays01 {
         }
         System.out.println(sum);//18
 
-        //Example 2: Type code to find the total number of elements in the multidimensional array
+        //Example 2: Type code to find the total number of elements in the multidimensional array.
         int[][] arr = {{5, 2}, {11, 13, 15}, {6}, {-2, 3, 5, 12}};
         int totalNumOfEl = 0;
         for (int[] w : arr) {
@@ -35,7 +35,7 @@ public class Day15MultiDimensionalArrays01 {
         }
         System.out.println(totalNumOfEl);//10
 
-        //Example 3: Print the elements which has "a" in it from a multidimensional array
+        //Example 3: Print the elements which has "a" in it from a multidimensional array.
         String[][] brr = {{"Java", "is"}, {"easy", "to", "learn"}, {"if", "you", "study", "hard"}};
         for (String[] w : brr) {
             for (String u : w) {
@@ -47,7 +47,7 @@ public class Day15MultiDimensionalArrays01 {
 
         System.out.println();
 
-        //Example 4: Convert two-dimensional array to one-dimensional array
+        //Example 4: Convert two-dimensional array to one-dimensional array.
         String[][] crr = {{"Java", "is"}, {"easy", "to", "learn"}, {"if", "you", "study", "hard"}};
         int numOfEl = 0;
         for (String[] w : crr) {
@@ -65,7 +65,7 @@ public class Day15MultiDimensionalArrays01 {
         }
         System.out.println(Arrays.toString(drr));
 
-        //Example 5: Find the sum of the max and min element in an integer multidimensional array
+        //Example 5: Find the sum of the max and min element in an integer multidimensional array.
         int[][] err = {{5, 2}, {11, 130, 15}, {6}, {-2, 3, 5, 12}};
         //Find the maximum element
         System.out.println(Arrays.deepToString(err));

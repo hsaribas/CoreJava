@@ -4,23 +4,23 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Day13Arrays02 {
-    //Create a String array by getting elements from user
-    //Type code to put elements in alphabetical order
-    //Type code to print the total number of characters in the first and the last String
+    //Create a String array by getting elements from user.
+    //Type code to put elements in alphabetical order.
+    //Type code to print the total number of characters in the first and the last String.
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter the capacity of array");
+        System.out.println("Enter the capacity of array: ");
         int length = input.nextInt();
         String[] arr = new String[length];
         System.out.println("Empty Array: " + Arrays.toString(arr));
 
         for (int i = 0; i < length; i++) {
-            System.out.println("Enter the element of the array in the index of " + i);
+            System.out.println("Enter the element of the array in the index of " + i + ": ");
             arr[i] = input.next();
         }
         System.out.println(Arrays.toString(arr));
 
-        //sort() method puts the String elements in alphabetical order
+        //sort() method puts the String elements in alphabetical order.
         Arrays.sort(arr);
         System.out.println(Arrays.toString(arr));
         int numOfCharInFirstElement = arr[0].length();
