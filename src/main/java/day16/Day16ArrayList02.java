@@ -6,7 +6,7 @@ import java.util.List;
 public class Day16ArrayList02 {
 
     public static void main(String[] args) {
-        //Create an integer list, add 5 elements in it, remove the even elements, change the odd elements to 22
+        //Create an integer list, add 5 elements in it, remove the even elements, change the odd elements to 22.
         //[12, 3, 7, 24, 11] ==> [22, 22, 22]
         List<Integer> al = new ArrayList<>();
         al.add(12);
@@ -26,7 +26,7 @@ public class Day16ArrayList02 {
         }
         System.out.println(al);//[22, 22, 22]
 
-        //Create an integer list which has repeated elements then remove the duplicates
+        //Create an integer list which has repeated elements then remove the duplicates.
         //[2, 3, 2, 2, 4] ==> [2, 3, 4]
         List<Integer> originalList = new ArrayList<>();
         originalList.add(2);

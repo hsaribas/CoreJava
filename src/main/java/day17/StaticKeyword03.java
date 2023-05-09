@@ -4,18 +4,16 @@ import java.time.LocalDate;
 
 public class StaticKeyword03 {
     /*
-        Create unique student ids for every registered student
+        Create unique student ids for every registered student.
         Tom Hanks registered to Math Course(901) ==> TH20229011001
     */
     public static int counter = 1000;
 
     public StaticKeyword03() {
-
         counter++;
     }
 
     public static String setStdId(String stdName, String courseName) {
-
         String firstInitial = stdName.split(" ")[0].substring(0, 1);
         String lastInitial = stdName.split(" ")[1].substring(0, 1);
         LocalDate date = LocalDate.now();

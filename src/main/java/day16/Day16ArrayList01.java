@@ -28,7 +28,7 @@ public class Day16ArrayList01 {
 
         al.add(2, 99);
         al.add(88);
-        System.out.println(al);
+        System.out.println(al);//[12, 21, 99, 5, 88]
 
         //How to get the number of elements in a list
         int numOfElements = al.size();//5
@@ -38,8 +38,8 @@ public class Day16ArrayList01 {
         int el = al.get(1);//21
         System.out.println(el);
 
-        //Create a list and add even integers between 13 and 51 in descending order
-        //Then print the 7th element on the console
+        //Create a list and add even integers between 13 and 51 in descending order.
+        //Then print the 7th element on the console.
         List<Integer> cl = new ArrayList<>();
         for (int i = 51; i > 12; i--) {
             if (i % 2 == 0) {
@@ -68,7 +68,7 @@ public class Day16ArrayList01 {
         fl.add(32);
         fl.add(45);
         System.out.println(fl);//[12, 21, 32, 45]
-        //Remove 21 from the list
+        //Remove 21 from the list.
         //1st Way: To remove a specific element, use indexOf() inside the remove()
         fl.remove(fl.indexOf(21));
         System.out.println(fl);//[12, 32, 45]
@@ -76,7 +76,7 @@ public class Day16ArrayList01 {
         fl.remove((Integer) 32);
         System.out.println(fl);//[12, 45]
 
-        //Create a String list add elements into it then remove the elements start with "M" end with "a"
+        //Create a String list add elements into it then remove the elements start with "M" end with "a".
         List<String> gl = new ArrayList<>();
         gl.add("Maria");
         gl.add("Marina");

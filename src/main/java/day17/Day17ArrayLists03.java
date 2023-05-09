@@ -2,12 +2,13 @@ package day17;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class Day17ArrayLists03 {
     /*
-        Count the words in a String one by one
-        String is "Ali came to school and Ayse came to school."
+        Count the words in a String one by one.
+        String is "Ali came to school and Ayse came to school".
         Ali=1, came=2, to=2, school=2, and=1, Ayse=1
     */
     public static void main(String[] args) {
@@ -18,9 +19,7 @@ public class Day17ArrayLists03 {
         System.out.println(Arrays.toString(words));//[Ali, came, to, school, and, Ayse, came, to, school]
 
         List<String> wordsList = new ArrayList<>();
-        for (String w : words) {
-            wordsList.add(w);
-        }
+        Collections.addAll(wordsList, words);
 
         String word = "";
         int counter = 1;
