@@ -3,7 +3,7 @@ package day18;
 public class Day18PassByValuePassByReference {
     /*
         1) Java creates copy of values in method calls to protect original value of variables.
-           That process is called "Pass By Value"
+           That process is called "Pass By Value".
         2) By the help of "Pass By Value" we are able to protect the original value.
         3) Some programming languages may use "Pass By References", if you use that kind of languages be careful
            about protecting original values.
@@ -48,7 +48,6 @@ public class Day18PassByValuePassByReference {
     }
 
     public static String addExclamationMark(String greeting) {
-
         return greeting + "!";
     }
 }

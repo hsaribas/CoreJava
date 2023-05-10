@@ -13,8 +13,8 @@ public class Day20StringBuffer01 {
            and synchronized.
            Java did that to provide faster mutable String to developers.
         4) When to use "String", "StringBuilder", "StringBuffer"?
-           "String": If we want to operate with small amount of data use "String".
-           "StringBuilder": If we need single-thread operations with large data in fast pace use "StringBuilder".
+           "String": If we want to operate with small amount of data, use "String".
+           "StringBuilder": If we need single-thread operations with large data in fast pace, use "StringBuilder".
            "StringBuffer": Multi-thread operations with large amount of data needs "StringBuffer".
     */
     public static void main(String[] args) {
@@ -31,17 +31,15 @@ public class Day20StringBuffer01 {
 
     public static StringBuffer performanceOfStringBuffer(String str) {
         StringBuffer strBuffer = new StringBuffer(str);
-        for (int i = 0; i < 10000; i++) {
-            strBuffer.append("abc");
-        }
+        strBuffer.append("abc".repeat(10000));
+
         return strBuffer;
     }
 
     public static StringBuilder performanceOfStringBuilder(String str) {
         StringBuilder strBuilder = new StringBuilder(str);
-        for (int i = 0; i < 10000; i++) {
-            strBuilder.append("abc");
-        }
+        strBuilder.append("abc".repeat(10000));
+
         return strBuilder;
     }
 }
