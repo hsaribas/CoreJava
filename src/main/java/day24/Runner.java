@@ -6,8 +6,8 @@ public class Runner {
         Civic civic = new Civic();
         System.out.println(civic.number);
 
-        System.out.println(HondaAC.price);
         System.out.println(Engine.price);
+        System.out.println(HondaAC.price);
         System.out.println(Security.price);
 
         //When we create a method with body by using "default" keyword, we can access it just by creating object.

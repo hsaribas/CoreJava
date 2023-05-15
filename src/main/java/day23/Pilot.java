@@ -11,6 +11,6 @@ public class Pilot extends Honda {
     @Override
     public void musicSystem() {
 
-        System.out.println("Pilot uses perfect music system from Samsung");
+        System.out.println("Pilot uses perfect music system from Samsung...");
     }
 }

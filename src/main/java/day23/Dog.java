@@ -9,6 +9,6 @@ public class Dog extends Mammal {
 
     public Dog(int x) {
         this();
-        System.out.println("Dog constructor with int parameter");
+        System.out.println("Dog constructor with int parameter worked...");
     }
 }

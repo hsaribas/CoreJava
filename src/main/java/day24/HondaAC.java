@@ -21,9 +21,9 @@ interface HondaAC {
 
     /*
         Methods:
-        1) All methods in an interface must be abstract
-        2) Using "abstract" keyword is optional for methods
-        3) All methods in an interface must be "public"
+        1) All methods in an interface must be abstract.
+        2) Using "abstract" keyword is optional for methods.
+        3) All methods in an interface must be "public".
         4) Normally we can not create method with body in an interface. But java created "default method" you can use them
            in an interface, they will have body.
     */
@@ -34,12 +34,12 @@ interface HondaAC {
     //1) "default" over here is not "access modifier", it is for creating method with body in an interface.
     public default void bacteriaKiller() {
 
-        System.out.println("This AC kills %99.9 bacterias");
+        System.out.println("This AC kills %99.9 bacterias...");
     }
 
-    //2) By using "static" keyword, you can create method with body in an interface
+    //2) By using "static" keyword, you can create method with body in an interface.
     static void climateCool() {
 
-        System.out.println("This AC cools according to the climate");
+        System.out.println("This AC cools according to the climate...");
     }
 }

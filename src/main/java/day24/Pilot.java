@@ -5,12 +5,12 @@ public class Pilot implements HondaAC, Engine, Security {
     @Override
     public void cool() {
 
-        System.out.println("Pilot uses digital climate AC");
+        System.out.println("Pilot uses digital climate AC...");
     }
 
     @Override
     public void run() {
 
-        System.out.println("AC runs perfect");
+        System.out.println("AC runs perfect...");
     }
 }
