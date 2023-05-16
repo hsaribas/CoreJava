@@ -4,7 +4,8 @@ import java.util.LinkedHashSet;
 
 public class LinkedHashSet01 {
     /*
-        1) LinkedHashSet puts the elements in insertion order.
+        ii) LinkedHashSet:
+            a) LinkedHashSet puts the elements in insertion order.
     */
     public static void main(String[] args) {
         LinkedHashSet<String> lhSet = new LinkedHashSet<>();

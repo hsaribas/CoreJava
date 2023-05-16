@@ -15,7 +15,7 @@ public class TreeMap01 {
         tm.put(103, "Tom");
         tm.put(105, "Hanks");
         tm.put(104, "Tom Hanks");
-        //tm.put(null, "Is it null"); //NullPointerException
+        //tm.put(null, "Is it null?");//NullPointerException
         tm.put(102, null);
         tm.put(106, null);
         System.out.println(tm);

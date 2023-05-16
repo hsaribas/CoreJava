@@ -17,7 +17,7 @@ public class TreeSet02 {
         HashSet<String> hSet = new HashSet<>();
         TreeSet<String> tSet1 = new TreeSet<>();
 
-        //1st Way
+        //1st Way:
         long time1 = System.nanoTime();
         hSet.add("A");
         hSet.add("C");
@@ -27,7 +27,7 @@ public class TreeSet02 {
         TreeSet<String> tSet2 = new TreeSet<>(hSet);
         long time2 = System.nanoTime();
 
-        //2nd Way
+        //2nd Way:
         tSet1.add("A");
         tSet1.add("C");
         tSet1.add("B");
