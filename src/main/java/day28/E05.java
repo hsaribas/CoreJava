@@ -2,9 +2,8 @@ package day28;
 
 public class E05 {
     /*
-        Note: If there is parent-child relationship between Exception Classes and,
-              we need to use multiple catch blocks, we make the child first, otherwise we will
-              Compile Time Error.
+        Note: If there is parent-child relationship between Exception Classes, we need to use multiple catch blocks,
+        we make the child first, otherwise we will Compile Time Error.
     */
     public static void main(String[] args) {
         String str = "I love Java";

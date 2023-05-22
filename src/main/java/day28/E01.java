@@ -2,13 +2,13 @@ package day28;
 
 public class E01 {
     /*
-        1) Exception is un-expected issue
-        2) There are 2 ways to work with Exceptions
+        1) Exception is un-expected issue.
+        2) There are 2 ways to work with Exceptions;
              i) Throw Exception ==> Ask help
              ii) Handle Exception ==> Do it by yourself without asking help
-        3) Mainly there are 2 types of Exceptions
+        3) Mainly there are 2 types of Exceptions;
              i) Runtime Exceptions ==> We will see them after clicking on "run" button
-             ii) Compile Time Exception ==> We will see them while We type our code
+             ii) Compile Time Exception ==> We will see them while we type our code
     */
     public static void main(String[] args) {
         divide(12, 3);//4
