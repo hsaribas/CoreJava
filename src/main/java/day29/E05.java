@@ -11,7 +11,7 @@ public class E05 {
                        ii) StackOverFlowError: It occurs if the "Stack" memory is full.
                        ii) Linkage Error: It occurs if the "dependant" class has any issue.
 
-        Custom Exceptions: We can create our own Exception Classes, they can be "Checked"(CTE) or "Unchecked"(Run Time) exception.
+        Custom Exceptions: We can create our own Exception Classes, they can be "Checked"(Compile Time) or "Unchecked"(Runtime) exception.
                            i) To be able to create Custom Exceptions gives us flexibility.
                            ii) To be able to create Custom Exceptions protect the application from developer mistakes.
     */
@@ -32,7 +32,7 @@ public class E05 {
     }
 }
 
-//How to create "Custom Checked Exception" Class
+//How to create "Custom Checked Exception" Class?
 /*
     Steps to create "Custom Checked Exception"
     1) Make the class child of the "Exception Class".
@@ -40,6 +40,7 @@ public class E05 {
     3) Create "toString()" method to be able to see the message when the exception was thrown.
 */
 class IllegalGradeException extends Exception {
+
     String message;
 
     public IllegalGradeException(String message) {
@@ -53,8 +54,9 @@ class IllegalGradeException extends Exception {
     }
 }
 
-//How to create "Custom Un-Checked Exception" Class
+//How to create "Custom Un-Checked Exception" Class?
 class IllegalAgeException extends RuntimeException {
+
     String message;
 
     public IllegalAgeException(String message) {

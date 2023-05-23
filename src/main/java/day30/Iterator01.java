@@ -29,6 +29,6 @@ public class Iterator01 {
         }
 
         System.out.println(list);
-        //With the foreach loop, we can access all elements without using index, but we can not make permanent changes
+        //With the foreach loop, we can access all elements without using index, but we can not make permanent changes.
     }
 }

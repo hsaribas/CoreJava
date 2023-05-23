@@ -18,12 +18,11 @@ public class Iterator05 {
         System.out.println("list = " + list);//[5, 3, 7, 1, 9, 8, 2]
 
         //Calculate sum of all elements by using iterator.
-        Iterator ite1 = list.iterator();
+        Iterator<Integer> ite1 = list.iterator();
         int sum = 0;
         while (ite1.hasNext()) {
-            sum += (Integer) ite1.next();
+            sum += ite1.next();
         }
-
         System.out.println("sum = " + sum);
     }
 }

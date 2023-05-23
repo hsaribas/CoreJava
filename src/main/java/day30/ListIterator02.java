@@ -16,10 +16,11 @@ public class ListIterator02 {
         System.out.println("list = " + list);//[Ali, Veli, Ayse, Fatma, Hayriye]
 
         //Print all elements in reverse order by using iterator.
-        ListIterator listIte1 = list.listIterator();
+        ListIterator<String> listIte1 = list.listIterator();
         while (listIte1.hasNext()) {
             listIte1.next();
         }
+
         while (listIte1.hasPrevious()) {
             System.out.print(listIte1.previous() + " ");//previous() => Returns the previous element in the list and moves the pointer position backwards.
         }

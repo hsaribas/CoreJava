@@ -6,7 +6,7 @@ import java.time.format.DateTimeFormatter;
 public class Date01 {
 
     public static void main(String[] args) {
-        //How to create date object
+        //How to create date object?
         LocalDate currentDate1 = LocalDate.now();
         System.out.println("Current Date = " + currentDate1);//2022-09-20
 
@@ -30,7 +30,7 @@ public class Date01 {
         System.out.println(date1.isAfter(currentDate1));//false
         System.out.println(date1.isBefore(currentDate1));//true
 
-        //How to create time object
+        //How to create time object?
         LocalTime currentTime1 = LocalTime.now();
         System.out.println("Current Time = " + currentTime1);//19:08:36.066691
 
@@ -50,11 +50,11 @@ public class Date01 {
         System.out.println(currentTime1.now(ZoneId.of("America/Cordoba")));//13:14:44.006123200
         System.out.println(currentTime1.now(ZoneId.of("Turkey")));//19:15:44.121506500
 
-        //How to create an object from LocalDateTime
+        //How to create an object from LocalDateTime?
         LocalDateTime dateTime1 = LocalDateTime.now();
         System.out.println("Date Time = " + dateTime1);//2022-09-20T19:17:25.883575300
 
-        //How to format date
+        //How to format date?
         DateTimeFormatter dtf1 = DateTimeFormatter.ofPattern("dd-MM-yy");//M => Months, m => minutes
         //MMM => First 3 letters of month
         //MM => The number of the month
@@ -62,22 +62,22 @@ public class Date01 {
         //M => The number of month without 0 at the beginning
         System.out.println(dtf1.format(dateTime1));//20-09-22
 
-        //How to format time
+        //How to format time?
         LocalTime localTime = LocalTime.now();
         DateTimeFormatter dtf2 = DateTimeFormatter.ofPattern("HH:mm a");//hh => am-pm time format
         //HH => 24 hours time format
         //a => to put am-pm at the end
         System.out.println(dtf2.format(localTime));//19:29 PM
 
-        //How to find difference between two dates
+        //How to find difference between two dates?
         LocalDate d1 = LocalDate.now();
         LocalDate d2 = LocalDate.of(1995, 4, 19);
 
-        //If you want to get year, month and day together, use the code below
+        //If you want to get year, month and day together, use the code below.
         Period age = Period.between(d2, d1);
         System.out.println("Age = " + age);//P27Y5M1D
 
-        //If you want to get specific date part, use one of get method
+        //If you want to get specific date part, use one of get method.
         int ageYear = Period.between(d2, d1).getYears();
         System.out.println(ageYear);//27
     }

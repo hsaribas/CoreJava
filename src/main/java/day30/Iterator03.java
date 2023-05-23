@@ -18,7 +18,7 @@ public class Iterator03 {
         System.out.println("list = " + list);//[5, 3, 7, 1, 9, 8, 2]
 
         //Delete element 1 by using iterator.
-        Iterator ite1 = list.iterator();
+        Iterator<Integer> ite1 = list.iterator();
         ite1.next();
         ite1.next();
         ite1.next();

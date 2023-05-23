@@ -18,11 +18,10 @@ public class Iterator04 {
         System.out.println("list = " + list);//[5, 3, 7, 1, 9, 8, 2]
 
         //Delete all elements by using iterator.
-        Iterator ite1 = list.iterator();
+        Iterator<Integer> ite1 = list.iterator();
         while (ite1.hasNext()) {
             ite1.next();
             ite1.remove();
-
             System.out.println(list);
         }
     }
