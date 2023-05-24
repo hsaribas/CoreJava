@@ -1,14 +1,16 @@
 package practice01;
 
 public class Q03 {
-    //Write a Java program to break an integer into a sequence of individual digits.
-    //Hint: use / and %
-    //x: input: 12345
-    //   output: 1
-    //           2
-    //           3
-    //           4
-    //           5
+    /*
+        Write a Java program to break an integer into a sequence of individual digits.
+        Hint: use / and %
+        input: 12345
+        output: 1
+                2
+                3
+                4
+                5
+    */
     public static void main(String[] args) {
         int x = 12345;
         int ones = x % 10;

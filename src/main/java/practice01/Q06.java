@@ -11,9 +11,10 @@ public class Q06 {
     */
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.println("Enter a character");
+        System.out.println("Enter a character: ");
         char c = scan.next().charAt(0);
 
-        System.out.println((c <= 'z' && c >= 'a' || c >= 'A' && c <= 'Z') ? ((c <= 'z' && c >= 'a') ? "Lowercase Letter" : "Uppercase Letter") : "Not Letter");
+        System.out.println((c <= 'z' && c >= 'a' || c >= 'A' && c <= 'Z') ? ((c <= 'z' && c >= 'a') ?
+                "Lowercase Letter" : "Uppercase Letter") : "Not Letter");
     }
 }

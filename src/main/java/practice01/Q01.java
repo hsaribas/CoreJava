@@ -14,17 +14,18 @@ public class Q01 {
 	*/
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.println("Enter your first name");
+        System.out.println("Enter your first name: ");
         String firstName = scan.next();
-        System.out.println("Enter your last name");
+        System.out.println("Enter your last name: ");
         String lastName = scan.next();
-        System.out.println("Enter your age");
+        System.out.println("Enter your age: ");
         int age = scan.nextInt();
-        System.out.println("Enter your height");
+        System.out.println("Enter your height: ");
         double height = scan.nextDouble();
-        System.out.println("Enter your weight");
+        System.out.println("Enter your weight: ");
         int weight = scan.nextInt();
 
-        System.out.println("First Name: " + firstName + "\n" + "Last Name: " + lastName + "\n" + "Age: " + age + "\n" + "Height: " + height + "\n" + "Weight: " + weight);
+        System.out.println("First Name: " + firstName + "\n" + "Last Name: " + lastName + "\n" +
+                "Age: " + age + "\n" + "Height: " + height + "\n" + "Weight: " + weight);
     }
 }
