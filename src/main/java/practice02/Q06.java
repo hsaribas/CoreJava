@@ -4,12 +4,9 @@ import java.util.Scanner;
 
 public class Q06 {
     public static void main(String[] args) {
-        /*
-            Ask user to enter a String and count the number of
-            'a's come earlier than first occurrence of 'c'.
-        */
+        //Ask user to enter a String and count the number of 'a's come earlier than first occurrence of 'c'.
         Scanner scan = new Scanner(System.in);
-        System.out.println("Enter a String");
+        System.out.println("Enter a string: ");
         String str = scan.nextLine().toLowerCase();
         int counter = 0;
 

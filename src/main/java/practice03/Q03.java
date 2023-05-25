@@ -11,7 +11,7 @@ public class Q03 {
             6 = 1 + 2 + 3, 28 = 1 + 2 + 4 + 7 + 14, (496 and 8128)
         */
         Scanner scan = new Scanner(System.in);
-        System.out.println("Enter an integer to check if it is a perfect number or not");
+        System.out.println("Enter an integer to check if it is a Perfect Number or not: ");
         int num = scan.nextInt();
         int sum = 0;
 
@@ -23,7 +23,7 @@ public class Q03 {
         if (sum == num) {
             System.out.println(num + " is a Perfect Number");
         } else {
-            System.out.println(num + " is Not a Perfect Number");
+            System.out.println(num + " is not a Perfect Number");
         }
     }
 }

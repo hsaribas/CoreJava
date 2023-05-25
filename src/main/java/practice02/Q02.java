@@ -8,12 +8,12 @@ public class Q02 {
         /*
             Ask user to enter two words. If the number of characters of the first word is even, then put the second word
             into the middle of the first word. If the number of characters of first word is odd, then print on console
-            "You can not put second word into the middle of the first word. Because it's number of character is odd.".
+            "You can not put second word into the middle of the first word. Because its number of character is odd".
         */
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter 1st word ");
+        System.out.println("Enter 1st word: ");
         String word1 = input.next();
-        System.out.println("Enter 2nd word");
+        System.out.println("Enter 2nd word: ");
         String word2 = input.next();
 
         if (word1.length() % 2 == 0) {
@@ -23,7 +23,7 @@ public class Q02 {
             System.out.println("str2: " + str2);
             System.out.println(str1 + word2 + str2);
         } else {
-            System.out.println("You can not put second into the middle of the first word. Because it's number of character is odd.");
+            System.out.println("You can not put second into the middle of the first word. Because its number of character is odd");
         }
     }
 }

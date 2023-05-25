@@ -2,7 +2,7 @@ package practice03;
 
 public class Q06 {
     /*
-        Create a method and from a given array find all pairs whose sum is a given number,
+        Create a method from a given array and find all pairs whose sum is a given number.
 		{4, 6 ,5, -10, 8, 5, 20} ==> 10
 		4 + 6 = 10
         5 + 5 = 10
