@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Q06 {
     /*
         Type a code to find the minimum, maximum and second-maximum number in the array.
-        input: int[] arr = { 100, 10001, -90, 845, 8787, 898, 0, 1};
+        input: int[] arr = { 100, 10001, -90, 845, 8787, 898, 0, 1}
         output: min: -90, max: 10001, secMax: 8787
     */
     public static void main(String[] args) {

@@ -4,8 +4,7 @@ import java.util.Scanner;
 
 public class Q04 {
     /*
-        Type a code to ask user to enter the number of row
-        and print the shape below according to that number:
+        Type a code to ask user to enter the number of row and print the shape below according to that number.
         1
         2 3
         4 5 6
@@ -15,7 +14,7 @@ public class Q04 {
     */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter the number of row");
+        System.out.println("Enter the number of row: ");
         int row = input.nextInt();
         int a = 1;
 

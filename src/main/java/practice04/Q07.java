@@ -1,8 +1,10 @@
 package practice04;
 
 public class Q07 {
-    //Type a code to print the elements of an array those are greater than average.
-    //int[] arr = {5, 9, 15, 1, 0, 11, 3};
+    /*
+        Type a code to print the elements of an array those are greater than average.
+        int[] arr = {5, 9, 15, 1, 0, 11, 3};
+    */
     public static void main(String[] args) {
         int[] arr = {5, 9, 15, 1, 0, 11, 3};
         int sum = 0;
