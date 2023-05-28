@@ -1,23 +1,42 @@
 package practice05;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class Q02 {
-    //Create a method to print "Mark" on console by picking the characters from the "alphabet string".
-    String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    /*
+         Create a method to ask user to enter two strings and check them if they are "Anagram" or not.
 
+          ===Interview Question===
+         * Anagram is to create a new word from other word's characters.
+		 * Write a Java code to check if two words are anagram or not.
+		 * isAnagram("listen", "silent") ==> anagram
+		 * Dormitory = Dirty room
+		 * School master = The classroom
+		 * Conversation = Voices rant on
+		 * Listen = Silent
+		 * Astronomer = Moon starer
+    */
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter first string: ");
+        String first = input.nextLine();
+        System.out.println("Enter second string: ");
+        String second = input.nextLine();
 
-        System.out.println(nameIt("M", "A", "R", "K"));
+        anagram(first, second);
     }
 
-    public static String nameIt(String str1, String str2, String str3, String str4) {
-        Q02 obj = new Q02();
-        String alph = obj.alphabet;
+    public static void anagram(String str1, String str2) {
+        String[] arr = str1.toLowerCase().replace(" ", "").split("");
+        String[] brr = str2.toLowerCase().replace(" ", "").split("");
+        Arrays.sort(arr);
+        Arrays.sort(brr);
 
-        char ch1 = alph.charAt(alph.indexOf(str1));
-        char ch2 = alph.toLowerCase().charAt(alph.indexOf(str2));
-        char ch3 = alph.toLowerCase().charAt(alph.indexOf(str3));
-        char ch4 = alph.toLowerCase().charAt(alph.indexOf(str4));
-
-        return "" + ch1 + ch2 + ch3 + ch4;
+        if (Arrays.equals(arr, brr)) {
+            System.out.println("Anagram");
+        } else {
+            System.out.println("Not Anagram");
+        }
     }
 }

@@ -1,42 +1,41 @@
 package practice05;
 
-import java.util.Arrays;
-import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Q03 {
     /*
-         Create a method to ask user to enter two strings and check them if they are "Anagram" or not.
-
-          ===Interview Question===
-         * Anagram is to create a new word from other word's characters.
-		 * Write a java code to check if two words are anagram or not
-		 * isAnagram("listen", "silent") ==> anagram
-		 * Dormitory = Dirty room
-		 * School master = The classroom
-		 * Conversation = Voices rant on
-		 * Listen = Silent
-		 * Astronomer = Moon starer
+        * Create an integer array with 5 elements.
+        * Convert it to a list.
+        * Add 11 and 13 into the list, 11 will be at the beginning, 13 will be at index 3.
+        * Increase the value of every element by 3.
+        * Print the multiplication of the elements from index 2 to index 5.
     */
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        System.out.println("Enter first String");
-        String first = input.nextLine();
-        System.out.println("Enter second String");
-        String second = input.nextLine();
+        int[] arr = {4, 5, 6, 8, 9};
+        List<Integer> list = new ArrayList<>();
 
-        anagram(first, second);
-    }
-
-    public static void anagram(String str1, String str2) {
-        String[] arr = str1.toLowerCase().replace(" ", "").split("");
-        String[] brr = str2.toLowerCase().replace(" ", "").split("");
-        Arrays.sort(arr);
-        Arrays.sort(brr);
-
-        if (Arrays.equals(arr, brr)) {
-            System.out.println("Anagram");
-        } else {
-            System.out.println("Not Anagram");
+        for (int j : arr) {
+            list.add(j);
         }
+        System.out.println(list);//[4, 5, 6, 8, 9]
+
+        list.add(0, 11);
+        list.add(3, 13);
+        System.out.println(list);//[11, 4, 5, 13, 6, 8, 9]
+
+        /*
+        for (int i = 0; i < list.size(); i++) {
+            list.set(i, list.get(i) + 3);
+        }
+        */
+        list.replaceAll(integer -> integer + 3);
+        System.out.println(list);//[14, 7, 8, 16, 9, 11, 12]
+
+        int result = 1;
+        for (int i = 2; i <= 5; i++) {
+            result = result * list.get(i);
+        }
+        System.out.println(result);
     }
 }
