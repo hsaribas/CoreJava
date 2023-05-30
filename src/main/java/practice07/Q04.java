@@ -8,13 +8,15 @@ public class Q04 {
         String str = "Congratulations";
         String[] arr = str.split("");
         System.out.println(Arrays.toString(arr));
-        String strNew = "";
+        StringBuilder strNew = new StringBuilder();
 
         for (int i = arr.length - 1; i >= 0; i--) {
-            if (arr[i].equalsIgnoreCase("a") || arr[i].equalsIgnoreCase("e") || arr[i].equalsIgnoreCase("i") || arr[i].equalsIgnoreCase("o") || arr[i].equalsIgnoreCase("u")) {
+            if (arr[i].equalsIgnoreCase("a") || arr[i].equalsIgnoreCase("e") ||
+                    arr[i].equalsIgnoreCase("i") || arr[i].equalsIgnoreCase("o") ||
+                    arr[i].equalsIgnoreCase("u")) {
                 arr[i] = "*";
             }
-            strNew = strNew + arr[i];
+            strNew.append(arr[i]);
         }
         System.out.println(strNew);
     }

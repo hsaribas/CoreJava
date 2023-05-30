@@ -36,10 +36,10 @@ public class Q03 {
     public static void buyProduct() {
         Scanner input = new Scanner(System.in);
         System.out.println(productList);
-        System.out.println("Enter the product code you want to buy");
+        System.out.println("Enter the product code you want to buy: ");
         int codeOfProduct = input.nextInt();
         System.out.println(priceList);
-        System.out.println("Enter how many kilograms you want to buy");
+        System.out.println("Enter how many kilograms you want to buy: ");
         double kilograms = input.nextDouble();
         double productPrice = priceList.get(codeOfProduct - 1);
         double totalProductPrice = productPrice * kilograms;
@@ -47,7 +47,7 @@ public class Q03 {
 
         System.out.println("The product you chose: " + productList.get(codeOfProduct - 1));
         System.out.println("Product price: " + totalProductPrice);
-        System.out.println("To continue to shopping enter 1, to go to the grocery checkout enter 2");
+        System.out.println("To continue to shopping enter 1, to go to the grocery checkout enter 2: ");
         int decision = input.nextInt();
 
         if (decision == 1) {
@@ -58,6 +58,7 @@ public class Q03 {
     }
 
     public static void groceryCheckout() {
+
         System.out.println("Total Amount: " + totalAmount);
     }
 }

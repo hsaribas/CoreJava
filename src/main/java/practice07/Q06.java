@@ -1,7 +1,7 @@
 package practice07;
 
 public class Q06 {
-    //Type a method to check if an int Array is symmetrical or not.
+    //Type a method to check if an integer Array is symmetrical or not.
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 2, 1};
 
@@ -15,7 +15,7 @@ public class Q06 {
             if (arr[i] == arr[arr.length - 1 - i]) {
                 result = true;
             } else {
-                result = false;
+                //result = false;
                 break;
             }
         }

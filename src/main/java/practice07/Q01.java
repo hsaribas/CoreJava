@@ -1,7 +1,7 @@
 package practice07;
 
 public class Q01 {
-    //Check if a String is palindrome or not.
+    //Check if a string is Palindrome or not.
     public static void main(String[] args) {
         /*
         StringBuilder sb1 = new StringBuilder("12321");
@@ -12,6 +12,6 @@ public class Q01 {
 
         String str = "civic";
         String reversedStr = new StringBuilder(str).reverse().toString();
-        System.out.println("Is String palindrome? " + str.equals(reversedStr));
+        System.out.println("Is string Palindrome? " + str.equals(reversedStr));
     }
 }

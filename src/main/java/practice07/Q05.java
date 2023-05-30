@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class Q05 {
     /*
-        Take the exam point from user and print the grade on console by using switch statement according to the rules below:
+        Take the exam point from user and print the grade on console by using switch statement according to the
+        rules below;
             F--> (0.00 - 1.00)
             D--> (1.00 - 2.00)
             C--> (2.00 - 2.50)
@@ -14,7 +15,7 @@ public class Q05 {
     */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter your point");
+        System.out.println("Enter your point: ");
         double point = input.nextDouble();
         String grade = "";
 
