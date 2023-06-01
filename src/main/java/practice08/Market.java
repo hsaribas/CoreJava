@@ -4,7 +4,6 @@ import java.time.LocalDate;
 
 public class Market {
     //Type a supermarket program to see product name, product price and expiration date.
-
     String productName;
     double productPrice;
     String expirationDate;

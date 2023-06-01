@@ -28,7 +28,7 @@ public class Q05_Calculator {
         if (b == 0) {
             System.out.println("Do not use 0 for the second parameter");
         } else {
-            System.out.println("Quotient is: " + (a / b));
+            System.out.println("The quotient is: " + (a / b));
         }
     }
 }

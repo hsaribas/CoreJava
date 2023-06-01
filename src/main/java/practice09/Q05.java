@@ -15,6 +15,6 @@ public class Q05 {
         for (double w : mark) {
             sum += w;
         }
-        System.out.println(stdName + "'s Average of exams: " + String.format("%.2f", sum / mark.length));
+        System.out.println(stdName + "'s average of exams: " + String.format("%.2f", sum / mark.length));
     }
 }

@@ -13,7 +13,7 @@ public class Q02 {
     */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter number of rows");
+        System.out.println("Enter number of rows: ");
         int row = input.nextInt();
 
         for (int i = 0; i < row; i++) {

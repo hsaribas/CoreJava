@@ -4,9 +4,9 @@ import java.util.Arrays;
 
 public class Q02 {
     /*
-        * Create a method accepts a name as a parameter and prints the name as a char array. (Do not use toCharArray() method)
-        * Input: John
-        * Output: [J, o, h, n]
+        Create a method accepts a name as a parameter and prints the name as a char array. (Do not use toCharArray() method)
+        Input: John
+        Output: [J, o, h, n]
     */
     public static void main(String[] args) {
         System.out.println(Arrays.toString(convertToCharArray("John Doe")));

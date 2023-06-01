@@ -5,7 +5,7 @@ public class Q04 {
     String bookName;
     String authorName;
     int numOfPage;
-    static int numOfBooks;
+    static int numOfBooks = 0;
     String bookID;
 
     public static void main(String[] args) {
@@ -25,6 +25,7 @@ public class Q04 {
     }
 
     public void displayBook() {
-        System.out.println("Book Name: " + bookName + " - Author Name: " + authorName + " - Number Of Page: " + numOfPage + " - Book ID: " + bookID);
+        System.out.println("Book Name: " + bookName + " - Author Name: " + authorName +
+                " - Number Of Page: " + numOfPage + " - Book ID: " + bookID);
     }
 }
