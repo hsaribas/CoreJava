@@ -32,7 +32,7 @@ public class Q05 {
         int day = 0;
 
         while (day < 7) {
-            System.out.println("Enter the earning of " + days.get(day));
+            System.out.println("Enter the earning of " + days.get(day) + ": ");
             double todaysEarning = scan.nextDouble();
             dailyEarnings.add(todaysEarning);
             totalEarnings += todaysEarning;
@@ -52,24 +52,24 @@ public class Q05 {
     }
 
     private static String daysAboveAverage() {
-        String daysAboveAverage = "";
+        StringBuilder daysAboveAverage = new StringBuilder();
 
         for (int i = 0; i < dailyEarnings.size(); i++) {
             if (dailyEarnings.get(i) > averageOfEarnings()) {
-                daysAboveAverage += days.get(i) + " ";
+                daysAboveAverage.append(days.get(i)).append(" ");
             }
         }
-        return daysAboveAverage;
+        return daysAboveAverage.toString();
     }
 
     private static String daysBelowAverage() {
-        String daysBelowAverage = "";
+        StringBuilder daysBelowAverage = new StringBuilder();
 
         for (int i = 0; i < dailyEarnings.size(); i++) {
             if (dailyEarnings.get(i) < averageOfEarnings()) {
-                daysBelowAverage += days.get(i) + " ";
+                daysBelowAverage.append(days.get(i)).append(" ");
             }
         }
-        return daysBelowAverage;
+        return daysBelowAverage.toString();
     }
 }

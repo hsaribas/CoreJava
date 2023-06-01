@@ -12,7 +12,7 @@ public class Q03 {
         int[] arr = new int[6];
 
         for (int i = 0; i < arr.length; i++) {
-            System.out.println("Enter the element of index " + i);
+            System.out.println("Enter the element of index " + i + ": ");
             arr[i] = input.nextInt();
         }
         System.out.println("Array: " + Arrays.toString(arr));
