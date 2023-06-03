@@ -7,21 +7,20 @@ public class Courses {
     private int averageScore;
     private int numberOfStudents;
 
-    //1) Constructor without parameter
+    //1)Constructor without parameter.
     public Courses() {
 
     }
 
-    //2) Constructor with all parameters
+    //2)Constructor with all parameters.
     public Courses(String season, String courseName, int averageScore, int numberOfStudents) {
-
         Season = season;
         this.courseName = courseName;
         this.averageScore = averageScore;
         this.numberOfStudents = numberOfStudents;
     }
 
-    //3) getters() and setters()
+    //3)Getters() and Setters().
     public String getSeason() {
 
         return Season;
@@ -62,10 +61,10 @@ public class Courses {
         this.numberOfStudents = numberOfStudents;
     }
 
-    //4) toString()
+    //4)toString().
     @Override
     public String toString() {
-        return "Course: Season=" + Season + ", courseName=" + courseName + ", averageScore=" + averageScore
-                + ", numberOfStudents=" + numberOfStudents;
+        return "Course: Season = " + Season + ", courseName = " + courseName + ", averageScore = " + averageScore
+                + ", numberOfStudents = " + numberOfStudents;
     }
 }

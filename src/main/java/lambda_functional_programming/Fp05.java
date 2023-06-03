@@ -25,25 +25,25 @@ public class Fp05 {
         System.out.println(sortCourseWithAvgScoreInAscendingOrderSkipFirstGiven(coursesList, 1));
     }
 
-    //1) Create a method to check if all average scores are greater than given number.
+    //1)Create a method to check if all average scores are greater than given number.
     public static boolean checkAverageScoresToBeGreaterThanGivenNumber(List<Courses> list, double avgScore) {
 
         return list.stream().allMatch(t -> t.getAverageScore() > avgScore);
     }
 
-    //2) Create a method to check if at least one of the course name contains given word.
+    //2)Create a method to check if at least one of the course name contains given word.
     public static boolean checkIfAnyCourseContainsGivenWord(List<Courses> list, String word) {
 
         return list.stream().anyMatch(t -> t.getCourseName().contains(word));
     }
 
-    //3) Create a method to print the course whose average score is the highest.
+    //3)Create a method to print the course whose average score is the highest.
     public static String getCourseNameWhoseAvgIsTheHighest(List<Courses> list) {
 
         return list.stream().max(Comparator.comparing(Courses::getAverageScore)).get().getCourseName();
     }
 
-    //4) Sort the list elements according to the average score in ascending order and skip first given.
+    //4)Sort the list elements according to the average score in ascending order and skip first given.
     public static List<Object> sortCourseWithAvgScoreInAscendingOrderSkipFirstGiven(List<Courses> list, long num) {
 
         return list.stream().sorted(Comparator.comparing(Courses::getAverageScore)).skip(num).collect(Collectors.toList());
